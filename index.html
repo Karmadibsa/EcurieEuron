@@ -1,86 +1,149 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Écurie de l'Euron — Centre Équestre & Pension</title>
-    <meta name="description" content="Située au cœur de la vallée de la Mortagne, à seulement 20 minutes de Lunéville, l'Écurie de l'Euron vous accueille dans un cadre verdoyant et paisible.">
+    <title>Écurie de l'Euron — Centre Équestre Familial</title>
+    <meta name="description"
+        content="Centre équestre familial au cœur de la vallée de la Mortagne. Cours d'équitation, pension chevaux, stages et balades dans un cadre verdoyant et chaleureux.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- ===== NAVIGATION ===== -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#hero" class="nav-logo">
-                <span class="logo-icon">🐴</span>
-                <span class="logo-text">Écurie de l'Euron</span>
+                <svg class="logo-horse" viewBox="0 0 40 40" width="36" height="36">
+                    <circle cx="20" cy="20" r="19" fill="#5b7c4f" stroke="#fff" stroke-width="1.5" />
+                    <text x="20" y="27" text-anchor="middle" fill="white" font-size="22">🐴</text>
+                </svg>
+                <div class="logo-text-group">
+                    <span class="logo-name">Écurie de l'Euron</span>
+                    <span class="logo-sub">Centre Équestre Familial</span>
+                </div>
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#hero" class="nav-link active">Accueil</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
                 <li><a href="#pension" class="nav-link">Pension</a></li>
-                <li><a href="#centre" class="nav-link">Centre Équestre</a></li>
+                <li><a href="#centre" class="nav-link">Cours</a></li>
                 <li><a href="#association" class="nav-link">Association</a></li>
                 <li><a href="#tarifs" class="nav-link">Tarifs</a></li>
-                <li><a href="#contact" class="nav-link nav-cta">Nous Contacter</a></li>
+                <li><a href="#contact" class="nav-link nav-cta"><i data-lucide="phone"
+                            style="width:15px;height:15px;"></i> Nous contacter</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- ===== HERO ===== -->
     <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=1920&h=1080&fit=crop&q=80"
+                alt="Chevaux dans la campagne" />
+        </div>
         <div class="hero-overlay"></div>
-        <div class="hero-particles" id="heroParticles"></div>
         <div class="hero-content">
-            <span class="hero-badge reveal">Depuis 2015 • Remenoville (54)</span>
-            <h1 class="hero-title reveal">
-                Écurie de<br>
-                <span class="hero-accent">l'Euron</span>
+            <div class="hero-badge">
+                <i data-lucide="map-pin" style="width:14px;height:14px;"></i>
+                Remenoville · Vallée de la Mortagne
+            </div>
+            <h1 class="hero-title">
+                Bienvenue à l'Écurie<br>
+                <span class="hero-highlight">de l'Euron</span>
             </h1>
-            <p class="hero-subtitle reveal">
-                Un espace dédié à la passion équestre au cœur de la vallée de la Mortagne
+            <p class="hero-subtitle">
+                Un centre équestre familial où le bien-être animal,<br class="hide-mobile">
+                la convivialité et le plaisir de monter à cheval ne font qu'un.
             </p>
-            <div class="hero-actions reveal">
-                <a href="#services" class="btn btn-primary">Découvrir nos services</a>
-                <a href="#contact" class="btn btn-outline">Nous contacter</a>
+            <div class="hero-actions">
+                <a href="#centre" class="btn btn-warm">
+                    <i data-lucide="heart"></i> Découvrir nos cours
+                </a>
+                <a href="#contact" class="btn btn-white">
+                    <i data-lucide="message-circle"></i> Prendre contact
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">2015</span>
+                    <span class="stat-label">Depuis</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">30</span>
+                    <span class="stat-label">Box</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">20 min</span>
+                    <span class="stat-label">de Lunéville</span>
+                </div>
             </div>
         </div>
-        <div class="hero-scroll">
-            <span>Scroll</span>
-            <div class="scroll-line"></div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,80 1440,70 L1440,120 L0,120 Z"
+                    fill="var(--c-cream)" />
+            </svg>
         </div>
     </section>
 
-    <!-- ===== INTRO ===== -->
-    <section class="intro" id="intro">
+    <!-- ===== WELCOME ===== -->
+    <section class="welcome" id="welcome">
         <div class="container">
-            <div class="intro-grid">
-                <div class="intro-text reveal">
-                    <span class="section-tag">Bienvenue</span>
-                    <h2 class="section-title">Un cadre verdoyant<br>et <em>paisible</em></h2>
-                    <p>Située au cœur de la vallée de la Mortagne, à seulement 20 minutes de Lunéville, l'Écurie de l'Euron vous accueille dans un cadre verdoyant et paisible.</p>
-                    <p>Depuis 2015, notre centre équestre familial allie tradition et modernité pour offrir une expérience unique aux cavaliers de tous niveaux, du débutant à l'expérimenté.</p>
+            <div class="welcome-grid">
+                <div class="welcome-images reveal-left">
+                    <div class="img-stack">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&h=500&fit=crop"
+                            alt="Cavalière et son cheval" class="img-main" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1450052590821-8bf91254a353?w=300&h=250&fit=crop"
+                            alt="Paysage verdoyant" class="img-float" loading="lazy">
+                    </div>
                 </div>
-                <div class="intro-image reveal">
-                    <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=600&h=400&fit=crop" 
-                         alt="Cheval dans un pré verdoyant" loading="lazy">
-                    <div class="intro-image-badge">
-                        <span class="badge-number">10+</span>
-                        <span class="badge-label">ans d'expérience</span>
+                <div class="welcome-text reveal-right">
+                    <span class="chip"><i data-lucide="sun"></i> Notre histoire</span>
+                    <h2>Un lieu où chaque cavalier<br>se sent <em>chez soi</em></h2>
+                    <p class="lead">Depuis 2015, notre centre équestre familial allie tradition et modernité pour offrir
+                        une expérience unique aux cavaliers de tous niveaux.</p>
+                    <p>Du débutant à l'expérimenté, nous veillons à ce que chacun progresse à son rythme, entouré de
+                        chevaux de qualité et de moniteurs passionnés.</p>
+                    <div class="welcome-features">
+                        <div class="wf">
+                            <div class="wf-icon"><i data-lucide="shield-check"></i></div>
+                            <div>
+                                <strong>Sécurité</strong>
+                                <span>Moniteurs diplômés d'État</span>
+                            </div>
+                        </div>
+                        <div class="wf">
+                            <div class="wf-icon"><i data-lucide="smile"></i></div>
+                            <div>
+                                <strong>Convivialité</strong>
+                                <span>Ambiance familiale chaleureuse</span>
+                            </div>
+                        </div>
+                        <div class="wf">
+                            <div class="wf-icon"><i data-lucide="leaf"></i></div>
+                            <div>
+                                <strong>Nature</strong>
+                                <span>Cadre verdoyant et paisible</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -91,50 +154,66 @@
     <section class="services" id="services">
         <div class="container">
             <div class="section-header reveal">
-                <span class="section-tag">Ce que nous proposons</span>
-                <h2 class="section-title">Nos services <em>équestres</em></h2>
+                <span class="chip"><i data-lucide="sparkles"></i> Nos activités</span>
+                <h2>Tout ce qu'il faut pour vivre<br>votre <em>passion équestre</em></h2>
             </div>
-            <div class="services-grid">
-                <div class="service-card reveal">
-                    <div class="service-icon">
-                        <i data-lucide="graduation-cap"></i>
+            <div class="services-mosaic">
+                <div class="svc-card svc-big reveal"
+                    style="background-image: url('https://images.unsplash.com/photo-1509822929063-6b6cfc9b42f2?w=700&h=500&fit=crop');">
+                    <div class="svc-overlay"></div>
+                    <div class="svc-content">
+                        <div class="svc-icon-wrap"><i data-lucide="graduation-cap"></i></div>
+                        <h3>Cours d'équitation</h3>
+                        <p>Pour enfants, ados et adultes. Du baby poney (dès 3 ans) au galop 7, avec des moniteurs
+                            diplômés qui s'adaptent à chaque niveau.</p>
                     </div>
-                    <h3>Cours d'équitation</h3>
-                    <p>Cours pour enfants, ados et adultes, encadrés par des moniteurs diplômés. Progression, plaisir et sécurité sont nos priorités.</p>
                 </div>
-                <div class="service-card reveal">
-                    <div class="service-icon">
-                        <i data-lucide="home"></i>
+                <div class="svc-card reveal"
+                    style="background-image: url('https://images.unsplash.com/photo-1534307952820-3afec6704e6e?w=500&h=400&fit=crop');">
+                    <div class="svc-overlay"></div>
+                    <div class="svc-content">
+                        <div class="svc-icon-wrap"><i data-lucide="home"></i></div>
+                        <h3>Pension chevaux</h3>
+                        <p>Box spacieux, soins quotidiens attentifs, alimentation de qualité. Plusieurs formules
+                            disponibles.</p>
                     </div>
-                    <h3>Pension pour chevaux</h3>
-                    <p>Différentes formules de pension : hébergement en box ou au pré, alimentation de qualité et soins quotidiens attentifs.</p>
                 </div>
-                <div class="service-card reveal">
-                    <div class="service-icon">
-                        <i data-lucide="mountain-snow"></i>
+                <div class="svc-card reveal"
+                    style="background-image: url('https://images.unsplash.com/photo-1508881598441-324f3974994b?w=500&h=400&fit=crop');">
+                    <div class="svc-overlay"></div>
+                    <div class="svc-content">
+                        <div class="svc-icon-wrap"><i data-lucide="trees"></i></div>
+                        <h3>Stages & Balades</h3>
+                        <p>Stages vacances, formations spécifiques et balades dans les paysages de la vallée de la
+                            Mortagne.</p>
                     </div>
-                    <h3>Stages & Balades</h3>
-                    <p>Stages vacances scolaires, formations spécifiques et balades à cheval à la découverte des paysages de la vallée de la Mortagne.</p>
                 </div>
-                <div class="service-card reveal">
-                    <div class="service-icon">
-                        <i data-lucide="heart"></i>
+                <div class="svc-card svc-accent reveal">
+                    <div class="svc-content">
+                        <div class="svc-icon-wrap"><i data-lucide="heart-handshake"></i></div>
+                        <h3>Anniversaires & événements</h3>
+                        <p>Baptêmes de poney, anniversaires au contact des chevaux… Des moments magiques pour petits et
+                            grands !</p>
+                        <a href="#contact" class="svc-link">Réserver <i data-lucide="arrow-right"
+                                style="width:16px;height:16px;"></i></a>
                     </div>
-                    <h3>Notre différence</h3>
-                    <p>Bien-être animal et convivialité au centre de notre démarche. Manège couvert, carrière extérieure, paddocks spacieux.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ===== QUOTE ===== -->
-    <section class="quote-section">
+    <section class="quote-banner">
         <div class="container">
-            <blockquote class="big-quote reveal">
-                <span class="quote-mark">"</span>
-                <p>Nos chevaux sont sympas, nos cavaliers aussi ! Partager ensemble une passion commune, c'est tellement bien !</p>
-                <cite>— L'équipe de l'Écurie de l'Euron</cite>
-            </blockquote>
+            <div class="quote-inner reveal">
+                <img src="https://images.unsplash.com/photo-1551884831-bbf3cdc6469e?w=200&h=200&fit=crop"
+                    alt="Chevaux au pré" class="quote-img" loading="lazy">
+                <blockquote>
+                    <p>« Nos chevaux sont sympas, nos cavaliers aussi !<br>Partager ensemble une passion commune, c'est
+                        tellement bien ! »</p>
+                    <cite>L'équipe de l'Écurie de l'Euron</cite>
+                </blockquote>
+            </div>
         </div>
     </section>
 
@@ -142,123 +221,170 @@
     <section class="pension" id="pension">
         <div class="container">
             <div class="section-header reveal">
-                <span class="section-tag">Hébergement</span>
-                <h2 class="section-title">Pension <em>chevaux</em></h2>
-                <p class="section-desc">L'écurie de l'Euron accueille vos chevaux dans des boxes spacieux, curés chaque semaine et repaillés tous les jours. Une ration de foin est distribuée matin et soir. L'alimentation est traditionnelle, à base d'orge aplatie et de compléments.</p>
+                <span class="chip"><i data-lucide="home"></i> Hébergement</span>
+                <h2>Une pension où vos chevaux<br>sont <em>comme chez eux</em></h2>
+                <p class="section-lead">Boxes spacieux curés chaque semaine et repaillés tous les jours. Une ration de
+                    foin matin et soir, alimentation traditionnelle à base d'orge aplatie et de compléments.</p>
             </div>
 
-            <div class="facilities-grid">
-                <div class="facility-card reveal">
-                    <div class="facility-icon"><i data-lucide="fence"></i></div>
-                    <h4>La Carrière</h4>
-                    <p>30m × 50m en sable de Fontainebleau. Lissée régulièrement, éclairée, avec matériel d'obstacle à disposition.</p>
+            <div class="facilities">
+                <div class="fac reveal">
+                    <div class="fac-visual">
+                        <i data-lucide="move-horizontal"></i>
+                        <span class="fac-dim">30m × 50m</span>
+                    </div>
+                    <h4>Carrière</h4>
+                    <p>Sable de Fontainebleau, éclairée, matériel d'obstacle à disposition</p>
                 </div>
-                <div class="facility-card reveal">
-                    <div class="facility-icon"><i data-lucide="warehouse"></i></div>
-                    <h4>Le Manège</h4>
-                    <p>25m × 40m en sable de Fontainebleau. Éclairé, avec matériels pédagogiques. Club house avec vue sur le manège.</p>
+                <div class="fac reveal">
+                    <div class="fac-visual">
+                        <i data-lucide="warehouse"></i>
+                        <span class="fac-dim">25m × 40m</span>
+                    </div>
+                    <h4>Manège couvert</h4>
+                    <p>Sable de Fontainebleau, éclairé, matériels pédagogiques. Club house avec vue</p>
                 </div>
-                <div class="facility-card reveal">
-                    <div class="facility-icon"><i data-lucide="door-open"></i></div>
-                    <h4>Les Écuries</h4>
-                    <p>30 box neufs et spacieux (3m × 3,5m), abreuvoir chauffant. 6 box extérieurs sous appentis et 5 box avec fenêtres.</p>
+                <div class="fac reveal">
+                    <div class="fac-visual">
+                        <i data-lucide="door-open"></i>
+                        <span class="fac-dim">30 box</span>
+                    </div>
+                    <h4>Écuries neuves</h4>
+                    <p>3m × 3,5m, abreuvoir chauffant. 6 box extérieurs, 5 avec fenêtres</p>
                 </div>
-                <div class="facility-card reveal">
-                    <div class="facility-icon"><i data-lucide="circle-dot"></i></div>
-                    <h4>Rond de Longe</h4>
-                    <p>14m de diamètre en sable de Fontainebleau.</p>
+                <div class="fac reveal">
+                    <div class="fac-visual">
+                        <i data-lucide="circle"></i>
+                        <span class="fac-dim">Ø 14m</span>
+                    </div>
+                    <h4>Rond de longe</h4>
+                    <p>Sable de Fontainebleau</p>
                 </div>
-                <div class="facility-card reveal">
-                    <div class="facility-icon"><i data-lucide="trees"></i></div>
-                    <h4>Les Paddocks</h4>
-                    <p>Plusieurs paddocks clôturés par des fils électriques disponibles.</p>
+                <div class="fac reveal">
+                    <div class="fac-visual">
+                        <i data-lucide="fence"></i>
+                    </div>
+                    <h4>Paddocks</h4>
+                    <p>Plusieurs paddocks clôturés disponibles</p>
                 </div>
-                <div class="facility-card reveal">
-                    <div class="facility-icon"><i data-lucide="key"></i></div>
-                    <h4>La Sellerie</h4>
-                    <p>À disposition des cavaliers. Chaque propriétaire dispose d'une clef personnelle.</p>
+                <div class="fac reveal">
+                    <div class="fac-visual">
+                        <i data-lucide="key-round"></i>
+                    </div>
+                    <h4>Sellerie</h4>
+                    <p>À disposition, chaque propriétaire possède sa clef</p>
                 </div>
             </div>
 
-            <div class="pension-note reveal">
-                <i data-lucide="info"></i>
-                <p>Nous accueillons également les chevaux au <strong>débourrage</strong> et au <strong>travail</strong>.</p>
+            <div class="pension-extra reveal">
+                <div class="pe-icon"><i data-lucide="plus-circle"></i></div>
+                <p>Nous accueillons également les chevaux au <strong>débourrage</strong> et au <strong>travail</strong>.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- ===== CENTRE ÉQUESTRE ===== -->
+    <!-- ===== CENTRE EQUESTRE ===== -->
     <section class="centre" id="centre">
+        <div class="wave-top">
+            <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+                <path d="M0,40 C480,80 960,0 1440,40 L1440,0 L0,0 Z" fill="var(--c-cream)" />
+            </svg>
+        </div>
         <div class="container">
-            <div class="centre-layout">
-                <div class="centre-image reveal">
-                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=700&fit=crop" 
-                         alt="Cours d'équitation" loading="lazy">
-                </div>
-                <div class="centre-content reveal">
-                    <span class="section-tag">Apprentissage</span>
-                    <h2 class="section-title">Centre <em>Équestre</em></h2>
-                    <p>Le centre équestre propose différentes activités aux cavaliers de tous âges.</p>
+            <div class="centre-grid">
+                <div class="centre-content reveal-left">
+                    <span class="chip chip-light"><i data-lucide="star"></i> Apprentissage</span>
+                    <h2>Un centre équestre<br>pour <em>toute la famille</em></h2>
+                    <p class="lead">Des cours adaptés à tous les âges et tous les niveaux, dans une ambiance chaleureuse
+                        et bienveillante.</p>
 
-                    <div class="centre-activities">
-                        <div class="activity">
-                            <div class="activity-icon"><i data-lucide="baby"></i></div>
+                    <div class="cours-list">
+                        <div class="cours">
+                            <div class="cours-age">3+</div>
                             <div>
                                 <h4>Baby Poney</h4>
-                                <p>Accessible dès 3 ans. Cours d'1h avec préparation des poneys, travail ludique et balade.</p>
+                                <p>1h avec préparation des poneys, jeux et balade. Plaisir garanti pour les plus petits
+                                    !</p>
                             </div>
                         </div>
-                        <div class="activity">
-                            <div class="activity-icon"><i data-lucide="trophy"></i></div>
+                        <div class="cours">
+                            <div class="cours-age">G1-7</div>
                             <div>
-                                <h4>Galop 1 à 7</h4>
-                                <p>Cours du débutant au confirmé. Passage des galops sur place et sorties en concours régulières.</p>
+                                <h4>Cours Galop 1 à 7</h4>
+                                <p>Progression encadrée, passage des galops sur place. Sorties en concours régulières.
+                                </p>
                             </div>
                         </div>
-                        <div class="activity">
-                            <div class="activity-icon"><i data-lucide="party-popper"></i></div>
+                        <div class="cours">
+                            <div class="cours-age">🎉</div>
                             <div>
-                                <h4>Événements</h4>
-                                <p>Journée portes ouvertes annuelle, anniversaires, baptêmes de poney et balades sur demande.</p>
+                                <h4>Événements & portes ouvertes</h4>
+                                <p>Journée portes ouvertes annuelle avec spectacles, anniversaires et baptêmes de poney.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="centre-visual reveal-right">
+                    <div class="cv-collage">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=500&h=600&fit=crop"
+                            alt="Cours d'équitation" class="cv-main" loading="lazy">
+                        <div class="cv-badge">
+                            <span class="cv-badge-icon">⭐</span>
+                            <span>Moniteurs<br><strong>diplômés d'État</strong></span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="wave-bottom">
+            <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+                <path d="M0,40 C480,0 960,80 1440,40 L1440,80 L0,80 Z" fill="var(--c-cream)" />
+            </svg>
         </div>
     </section>
 
     <!-- ===== ASSOCIATION ===== -->
     <section class="association" id="association">
         <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Communauté</span>
-                <h2 class="section-title">Association des Cavaliers<br>de <em>l'Euron</em></h2>
-            </div>
+            <div class="asso-layout">
+                <div class="asso-main reveal">
+                    <span class="chip"><i data-lucide="users"></i> Communauté</span>
+                    <h2>L'association des cavaliers<br>de <em>l'Euron</em></h2>
+                    <p class="lead">L'association organise des manifestations et activités au sein du centre équestre.
+                        C'est un point de rencontre pour tous les cavaliers et amis de l'écurie.</p>
 
-            <div class="asso-grid">
-                <div class="asso-card reveal">
-                    <div class="asso-icon"><i data-lucide="users"></i></div>
-                    <h3>Notre rôle</h3>
-                    <p>Organiser des manifestations et activités au sein du centre équestre et augmenter sa visibilité. L'association est un point de rencontre des cavaliers et amis de l'écurie.</p>
+                    <div class="asso-events">
+                        <h4><i data-lucide="calendar-heart"></i> Nos temps forts</h4>
+                        <div class="events-tags">
+                            <span class="etag">🐣 Pâques</span>
+                            <span class="etag">🎃 Halloween</span>
+                            <span class="etag">🎅 Saint Nicolas</span>
+                            <span class="etag">🐴 Fête du cheval</span>
+                            <span class="etag">🐌 Foire de Gerbéviller</span>
+                            <span class="etag">🏠 Portes ouvertes</span>
+                            <span class="etag">🍽️ Repas de l'écurie</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="asso-card reveal">
-                    <div class="asso-icon"><i data-lucide="calendar-heart"></i></div>
-                    <h3>Manifestations</h3>
-                    <p>Journées portes ouvertes, animations jeunes (Pâques, Halloween, St Nicolas), repas entre membres, Foire à l'escargot de Gerbéviller, et la Fête du cheval en septembre.</p>
+                <div class="asso-join reveal">
+                    <div class="join-card">
+                        <div class="join-icon">🤝</div>
+                        <h3>Rejoignez-nous !</h3>
+                        <p>Toute personne de plus de <strong>16 ans</strong> peut devenir membre actif avec droit de
+                            vote et tarifs préférentiels.</p>
+                        <ul class="join-perks">
+                            <li><i data-lucide="check-circle"></i> Participer aux assemblées</li>
+                            <li><i data-lucide="check-circle"></i> Tarifs préférentiels</li>
+                            <li><i data-lucide="check-circle"></i> Proposer des activités</li>
+                        </ul>
+                        <p class="join-price"><strong>Cotisation :</strong> don libre</p>
+                        <a href="mailto:assoecuriedeleuron@gmail.com" class="btn btn-warm btn-full">
+                            <i data-lucide="mail"></i> Nous écrire
+                        </a>
+                    </div>
                 </div>
-                <div class="asso-card reveal">
-                    <div class="asso-icon"><i data-lucide="hand-heart"></i></div>
-                    <h3>Devenir membre actif</h3>
-                    <p>Toute personne de plus de 16 ans peut devenir membre actif avec droit de vote, tarifs préférentiels et participation aux décisions. Cotisation sous forme de don libre.</p>
-                </div>
-            </div>
-
-            <div class="asso-cta reveal">
-                <p>Nous avons besoin de vous !</p>
-                <a href="mailto:assoecuriedeleuron@gmail.com" class="btn btn-primary">
-                    <i data-lucide="mail"></i> Rejoindre l'association
-                </a>
             </div>
         </div>
     </section>
@@ -267,96 +393,60 @@
     <section class="tarifs" id="tarifs">
         <div class="container">
             <div class="section-header reveal">
-                <span class="section-tag">Nos prix</span>
-                <h2 class="section-title">Grille <em>tarifaire</em></h2>
+                <span class="chip"><i data-lucide="tag"></i> Tarifs clairs</span>
+                <h2>Des tarifs <em>accessibles</em><br>pour tous</h2>
             </div>
 
-            <div class="tarifs-grid">
-                <!-- Pension -->
-                <div class="tarif-block reveal">
-                    <div class="tarif-header">
+            <div class="tarifs-row">
+                <div class="tarif-card reveal">
+                    <div class="tc-header tc-green">
                         <i data-lucide="home"></i>
                         <h3>Pension</h3>
+                        <span class="tc-sub">Hébergement de vos chevaux</span>
                     </div>
-                    <ul class="tarif-list">
-                        <li>
-                            <span class="tarif-label">Pension de base</span>
-                            <span class="tarif-price">240€<small>/mois</small></span>
-                        </li>
-                        <li>
-                            <span class="tarif-label">Pension + paddock quotidien</span>
-                            <span class="tarif-price">270€<small>/mois</small></span>
-                        </li>
-                        <li>
-                            <span class="tarif-label">Pension parc</span>
-                            <span class="tarif-price">200€<small>/mois</small></span>
-                        </li>
-                        <li>
-                            <span class="tarif-label">Quart de pension</span>
-                            <span class="tarif-price">40€<small>/mois</small></span>
-                        </li>
-                        <li>
-                            <span class="tarif-label">Tiers de pension</span>
-                            <span class="tarif-price">70€<small>/mois</small></span>
-                        </li>
-                        <li>
-                            <span class="tarif-label">Demi-pension</span>
-                            <span class="tarif-price">130€<small>/mois</small></span>
-                        </li>
+                    <ul class="tc-list">
+                        <li><span>Pension de base</span><strong>240€<small>/mois</small></strong></li>
+                        <li><span>Pension + paddock quotidien</span><strong>270€<small>/mois</small></strong></li>
+                        <li><span>Pension parc</span><strong>200€<small>/mois</small></strong></li>
+                        <li class="tc-sep"></li>
+                        <li><span>Quart de pension</span><strong>40€<small>/mois</small></strong></li>
+                        <li><span>Tiers de pension</span><strong>70€<small>/mois</small></strong></li>
+                        <li><span>Demi-pension</span><strong>130€<small>/mois</small></strong></li>
                     </ul>
                 </div>
 
-                <!-- Centre équestre -->
-                <div class="tarif-block reveal">
-                    <div class="tarif-header">
+                <div class="tarif-card tarif-featured reveal">
+                    <div class="tc-ribbon">Le + populaire</div>
+                    <div class="tc-header tc-warm">
                         <i data-lucide="graduation-cap"></i>
                         <h3>Centre Équestre</h3>
+                        <span class="tc-sub">Cours & licences</span>
                     </div>
-                    <ul class="tarif-list">
-                        <li>
-                            <span class="tarif-label">Cotisation + licence mineur</span>
-                            <span class="tarif-price">55€<small>/an</small></span>
-                        </li>
-                        <li>
-                            <span class="tarif-label">Cotisation + licence majeur</span>
-                            <span class="tarif-price">65€<small>/an</small></span>
-                        </li>
-                        <li>
-                            <span class="tarif-label">Forfait annuel</span>
-                            <span class="tarif-price">560€<small>/an</small></span>
-                        </li>
-                        <li>
-                            <span class="tarif-label">Cours collectif (unité)</span>
-                            <span class="tarif-price">20€<small>/séance</small></span>
-                        </li>
-                        <li>
-                            <span class="tarif-label">Baby poney (10 séances)</span>
-                            <span class="tarif-price">110€</span>
-                        </li>
-                        <li>
-                            <span class="tarif-label">Cavalier propriétaire</span>
-                            <span class="tarif-price">100€</span>
-                        </li>
-                        <li>
-                            <span class="tarif-label">Cours particulier (1h)</span>
-                            <span class="tarif-price">28€<small>/séance</small></span>
-                        </li>
+                    <ul class="tc-list">
+                        <li><span>Cotisation + licence mineur</span><strong>55€<small>/an</small></strong></li>
+                        <li><span>Cotisation + licence majeur</span><strong>65€<small>/an</small></strong></li>
+                        <li class="tc-sep"></li>
+                        <li><span>Forfait annuel</span><strong>560€<small>/an</small></strong></li>
+                        <li><span>Cours collectif (unité)</span><strong>20€<small>/séance</small></strong></li>
+                        <li><span>Baby poney (×10 séances)</span><strong>110€</strong></li>
+                        <li><span>Cavalier propriétaire</span><strong>100€</strong></li>
+                        <li><span>Cours particulier (1h)</span><strong>28€<small>/séance</small></strong></li>
                     </ul>
                 </div>
 
-                <!-- Association -->
-                <div class="tarif-block tarif-block--accent reveal">
-                    <div class="tarif-header">
+                <div class="tarif-card reveal">
+                    <div class="tc-header tc-blue">
                         <i data-lucide="heart"></i>
                         <h3>Association</h3>
+                        <span class="tc-sub">Rejoignez la communauté</span>
                     </div>
-                    <ul class="tarif-list">
-                        <li>
-                            <span class="tarif-label">Cotisation annuelle</span>
-                            <span class="tarif-price">Don libre</span>
-                        </li>
+                    <ul class="tc-list">
+                        <li><span>Cotisation annuelle</span><strong>Don libre</strong></li>
                     </ul>
-                    <p class="tarif-note">Cotisation sous forme de don libre, ouverte à tous.</p>
+                    <div class="tc-note">
+                        <p>L'association est ouverte à tous ! Devenez membre actif et participez à la vie de l'écurie.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -364,64 +454,89 @@
 
     <!-- ===== CONTACT ===== -->
     <section class="contact" id="contact">
+        <div class="wave-top">
+            <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+                <path d="M0,40 C480,80 960,0 1440,40 L1440,0 L0,0 Z" fill="var(--c-cream)" />
+            </svg>
+        </div>
         <div class="container">
-            <div class="contact-layout">
-                <div class="contact-info reveal">
-                    <span class="section-tag">Rendez-nous visite</span>
-                    <h2 class="section-title">Nous <em>contacter</em></h2>
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <span class="chip chip-light"><i data-lucide="map-pin"></i> Venez nous voir</span>
+                    <h2>Rendez-nous<br><em>visite !</em></h2>
+                    <p>Que vous soyez cavalier débutant, confirmé ou propriétaire en recherche d'une pension de
+                        confiance, nous vous ouvrons nos portes avec plaisir.</p>
 
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <i data-lucide="map-pin"></i>
                             <div>
-                                <h4>Adresse</h4>
-                                <p>1 route de Gerbéviller<br>54830 Remenoville</p>
+                                <strong>Adresse</strong>
+                                <span>1 route de Gerbéviller<br>54830 Remenoville</span>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i data-lucide="phone"></i></div>
+                        <div class="info-card">
+                            <i data-lucide="phone"></i>
                             <div>
-                                <h4>Téléphone</h4>
-                                <p><a href="tel:+33601460489">06.01.46.04.89</a></p>
+                                <strong>Téléphone</strong>
+                                <a href="tel:+33601460489">06 01 46 04 89</a>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i data-lucide="mail"></i></div>
+                        <div class="info-card">
+                            <i data-lucide="mail"></i>
                             <div>
-                                <h4>Association</h4>
-                                <p><a href="mailto:assoecuriedeleuron@gmail.com">assoecuriedeleuron@gmail.com</a></p>
+                                <strong>E-mail association</strong>
+                                <a href="mailto:assoecuriedeleuron@gmail.com">assoecuriedeleuron@gmail.com</a>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="contact-map">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.5!2d6.68!3d48.48!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4793a1c6c1c1c1c1%3A0x0!2sRemenoville!5e0!3m2!1sfr!2sfr!4v1234567890" 
-                            width="100%" height="250" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy"
-                            title="Localisation Écurie de l'Euron"></iframe>
+                <div class="contact-form-wrap reveal-right">
+                    <div class="form-card">
+                        <h3><i data-lucide="send"></i> Écrivez-nous</h3>
+                        <p>Une question, une réservation ? Laissez-nous un message.</p>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Votre nom</label>
+                                    <input type="text" id="name" name="name" placeholder="Marie Dupont" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" id="email" name="email" placeholder="marie@email.fr" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Sujet</label>
+                                <select id="subject" name="subject">
+                                    <option value="">Choisissez un sujet…</option>
+                                    <option value="cours">Cours d'équitation</option>
+                                    <option value="pension">Pension / Demi-pension</option>
+                                    <option value="stage">Stage ou balade</option>
+                                    <option value="anniversaire">Anniversaire / Événement</option>
+                                    <option value="association">Association</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4"
+                                    placeholder="Bonjour, je souhaite en savoir plus sur..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-warm btn-full">
+                                <i data-lucide="send"></i> Envoyer
+                            </button>
+                        </form>
                     </div>
                 </div>
+            </div>
 
-                <div class="contact-form-wrapper reveal">
-                    <h3>Laissez-nous un message</h3>
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Votre nom</label>
-                            <input type="text" id="name" name="name" placeholder="Jean Dupont" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Adresse e-mail</label>
-                            <input type="email" id="email" name="email" placeholder="jean@exemple.fr" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Votre message</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Je souhaite en savoir plus sur..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">
-                            <i data-lucide="send"></i> Envoyer le message
-                        </button>
-                    </form>
-                </div>
+            <div class="contact-map reveal">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5257!2d6.68!3d48.48!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4793a1c6c1c1c1c1%3A0x0!2sRemenoville!5e0!3m2!1sfr!2sfr!4v1234567890"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    title="Localisation Écurie de l'Euron"></iframe>
             </div>
         </div>
     </section>
@@ -429,35 +544,38 @@
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
+            <div class="footer-top">
                 <div class="footer-brand">
-                    <span class="logo-icon">🐴</span>
-                    <h3>Écurie de l'Euron</h3>
-                    <p>Un espace dédié à la passion équestre depuis 2015.</p>
+                    <h3>🐴 Écurie de l'Euron</h3>
+                    <p>Centre équestre familial au cœur de la vallée de la Mortagne. Un lieu de passion et de partage
+                        depuis 2015.</p>
                 </div>
-                <div class="footer-links">
-                    <h4>Navigation</h4>
+                <div class="footer-col">
+                    <h4>Naviguer</h4>
                     <ul>
                         <li><a href="#hero">Accueil</a></li>
                         <li><a href="#pension">Pension</a></li>
-                        <li><a href="#centre">Centre Équestre</a></li>
-                        <li><a href="#association">Association</a></li>
+                        <li><a href="#centre">Cours</a></li>
                         <li><a href="#tarifs">Tarifs</a></li>
                     </ul>
                 </div>
-                <div class="footer-contact">
+                <div class="footer-col">
                     <h4>Contact</h4>
-                    <p>1 route de Gerbéviller<br>54830 Remenoville</p>
-                    <p><a href="tel:+33601460489">06.01.46.04.89</a></p>
-                    <p><a href="mailto:assoecuriedeleuron@gmail.com">assoecuriedeleuron@gmail.com</a></p>
+                    <ul>
+                        <li>1 route de Gerbéviller</li>
+                        <li>54830 Remenoville</li>
+                        <li><a href="tel:+33601460489">06 01 46 04 89</a></li>
+                        <li><a href="mailto:assoecuriedeleuron@gmail.com">Email association</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Écurie de l'Euron — Tous droits réservés</p>
+                <p>© 2025 Écurie de l'Euron · Tous droits réservés</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
